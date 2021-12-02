@@ -192,4 +192,3 @@ public class AddStudent extends JFrame implements ActionListener{
         }
     }
 }
-

@@ -196,8 +196,7 @@ public class Home extends JFrame implements ActionListener{
             getContentPane().setBackground(Color.WHITE);
             contentPane.setBackground(Color.WHITE);
 	}
-        
-        
+                
         public void actionPerformed(ActionEvent ae){
             String msg = ae.getActionCommand();
             if(msg.equals("Logout")){

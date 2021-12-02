@@ -15,6 +15,7 @@ public class BookDetails extends JFrame implements ActionListener{
     private JButton b1,b2,b3;
 
     public static void main(String[] args) {
+        
 	new BookDetails().setVisible(true);
     }
     
@@ -35,6 +36,7 @@ public class BookDetails extends JFrame implements ActionListener{
     }
 
     public BookDetails() {
+        
         setBounds(350, 200, 890, 475);
         contentPane = new JPanel();
         contentPane.setBackground(Color.WHITE);
@@ -104,9 +106,44 @@ public class BookDetails extends JFrame implements ActionListener{
 	l3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				setVisible(false);
-				Home home = new Home();
-				home.setVisible(true);
+                            if(Login_user.c==1)
+                            {
+                                setVisible(false);
+                                new Home().setVisible(true);
+                            }
+                            else
+                            {
+                                setVisible(false);
+                                new studentHome().setVisible(true);
+                            }
+//                            try {
+//                    conn con = new conn();
+//                    String sql = "select * from account where admin=?";
+//                    //String ss="select * from account where admin=?";
+//                    
+//                    PreparedStatement st = con.c.prepareStatement(sql);
+//                    //PreparedStatement sst = con.c.prepareStatement(ss);                    
+//                    st.setInt(1, 1 ); 
+//                    //sst.setInt(1, c );
+//                    
+//
+//                    ResultSet r= st.executeQuery();
+//                    //ResultSet rr= sst.executeQuery();
+//                    System.out.println();
+//                    if (r.next()) {
+//                        setVisible(false);
+//                        new Home().setVisible(true);
+//                    } else{
+//			setVisible(false);
+//                        new studentHome().setVisible(true);
+//                    }
+//                       
+//		} catch (Exception e2) {
+//                    e2.printStackTrace();
+//		}
+//				setVisible(false);
+//				Home home = new Home();
+//				home.setVisible(true);
 			}
 		});
 	l3.setForeground(Color.GRAY);

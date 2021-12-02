@@ -233,8 +233,16 @@ public class ReturnBook extends JFrame implements ActionListener{
 		
             }
             if(ae.getSource() == b3){
-                this.setVisible(false);
-		new Home().setVisible(true);
+                if(Login_user.c==1)
+                            {
+                                setVisible(false);
+                                new Home().setVisible(true);
+                            }
+                            else
+                            {
+                                setVisible(false);
+                                new studentHome().setVisible(true);
+                            }
 			
             }
         }catch(Exception e){

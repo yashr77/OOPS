@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package library.management.system;
 
 import java.awt.*;
@@ -26,7 +22,7 @@ public class StudentDetails extends JFrame implements ActionListener{
     public void student() {
         try {
             conn con = new conn();
-            String sql = "select * from account";
+            String sql = "select * from student";
             PreparedStatement ps = con.c.prepareStatement(sql);
             ResultSet x = ps.executeQuery();
 
