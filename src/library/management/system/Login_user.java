@@ -12,7 +12,7 @@ public class Login_user extends JFrame implements ActionListener{
 	private JTextField textField;
 	private JPasswordField passwordField;
         private JButton button1,button2,button3;
-        private JCheckBox checkBox1;
+        private JCheckBox checkBox1,checkBox2;
 
 
 	public Login_user() {
@@ -75,11 +75,16 @@ public class Login_user extends JFrame implements ActionListener{
 	button3.setBounds(150, 231, 179, 39);
 	panel.add(button3);
         checkBox1 = new JCheckBox("Admin",false);    
-        checkBox1.setBounds(192,128, 75,75); 
+        checkBox1.setBounds(150,128, 75,75); 
         checkBox1.setOpaque(false);
 //        cb1 = new JCheckBox("Admin");
 //	cb1.addActionListener(this);
         panel.add(checkBox1);
+         
+        checkBox2 = new JCheckBox("Librarian",false);    
+        checkBox2.setBounds(240,128, 100,75); 
+        checkBox2.setOpaque(false);
+        panel.add(checkBox2);
         
 
 //	JLabel l5 = new JLabel("Trouble in Login?");
