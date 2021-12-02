@@ -9,17 +9,20 @@ public class Home extends JFrame implements ActionListener{
 
 	private JPanel contentPane;
         private JButton b1,b2,b3,b4,b5,b6;
-
+         
 	public static void main(String[] args) {
             new Home().setVisible(true);
 	}
         
         public Home() {
 	
-            setBounds(400, 150, 1000, 800);
+            
+            setBounds(400, 150, 810, 790);
             contentPane = new JPanel();
+            contentPane.setAlignmentX(Component.CENTER_ALIGNMENT);
             setContentPane(contentPane);
             contentPane.setLayout(null);
+            
 
             
             JMenuBar menuBar = new JMenuBar();
@@ -50,10 +53,7 @@ public class Home extends JFrame implements ActionListener{
             mnHelp.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
             
 
-            JMenuItem mntmReadme = new JMenuItem("Read Me");
-            mntmReadme.setBackground(new Color(211, 211, 211));
-            mntmReadme.setForeground(new Color(105, 105, 105));
-            mnHelp.add(mntmReadme);
+
 
             JMenuItem mntmAboutUs = new JMenuItem("About Us");
             mntmAboutUs.setForeground(new Color(105, 105, 105));
@@ -85,7 +85,7 @@ public class Home extends JFrame implements ActionListener{
             JLabel l1 = new JLabel("Library Management System");
             l1.setForeground(new Color(204, 51, 102));
             l1.setFont(new Font("Segoe UI Semilight", Font.BOLD, 30));
-            l1.setBounds(268, 30, 701, 80);
+            l1.setBounds(248, 30, 701, 80);
             contentPane.add(l1);
 
             JLabel l2 = new JLabel("");
@@ -139,13 +139,14 @@ public class Home extends JFrame implements ActionListener{
 				TitledBorder.TOP, null, new Color(220, 20, 60)));
             panel.setBounds(20, 120, 750, 260);
             panel.setBackground(Color.WHITE);
+          
             contentPane.add(panel);
 
             b4 = new JButton("Issue Book");
             b4.addActionListener(this);
             b4.setBackground(Color.BLACK);
             b4.setForeground(Color.WHITE);
-            b4.setBounds(76, 620, 143, 41);
+            b4.setBounds(76, 620, 159, 41);
             contentPane.add(b4);
 
             b5 = new JButton("Return Book");
@@ -167,7 +168,7 @@ public class Home extends JFrame implements ActionListener{
             Image i11 = i10.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i12 = new ImageIcon(i11);
             l5 = new JLabel(i12);
-            l5.setBounds(60, 440, 159, 163);
+            l5.setBounds(60, 440, 199, 193);
             contentPane.add(l5);
 
             JLabel l6 = new JLabel("");

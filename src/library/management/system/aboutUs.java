@@ -22,15 +22,7 @@ public class aboutUs extends JFrame{
             contentPane = new JPanel();
             setContentPane(contentPane);
             contentPane.setLayout(null);
-//
-//            JLabel l1 = new JLabel("New label");
-//            ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/logo.png"));
-//            Image i2 = i1.getImage().getScaledInstance(100, 100,Image.SCALE_DEFAULT);
-//            ImageIcon i3 = new ImageIcon(i2);
-//            l1 = new JLabel(i3);
-//            l1.setBounds(500, 40, 100, 100);
-//            contentPane.add(l1);
-//
+
 
             JLabel l1 = new JLabel("Library");
             l1.setForeground(new Color(0, 250, 154));

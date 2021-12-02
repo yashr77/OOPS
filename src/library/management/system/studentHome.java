@@ -16,7 +16,7 @@ public class studentHome extends JFrame implements ActionListener{
         
         public studentHome() {
 	
-            setBounds(400, 150, 1000, 800);
+            setBounds(400, 150, 808, 450);
             contentPane = new JPanel();
             setContentPane(contentPane);
             contentPane.setLayout(null);
@@ -71,39 +71,19 @@ public class studentHome extends JFrame implements ActionListener{
             bookdetails.setForeground(Color.DARK_GRAY);
             mnRecord.add(bookdetails);
 
-//            JMenuItem studentdetails = new JMenuItem("Student Details");
-//            studentdetails.setBackground(new Color(211, 211, 211));
-//            studentdetails.setForeground(Color.DARK_GRAY);
-//            studentdetails.addActionListener(this);
-//            mnRecord.add(studentdetails);
-            
+
             menuBar.add(mnRecord);
             menuBar.add(mnHelp);
             menuBar.add(mnExit);
 
             
-//            JLabel l1 = new JLabel("Library Management System");
-//            l1.setForeground(new Color(204, 51, 102));
-//            l1.setFont(new Font("Segoe UI Semilight", Font.BOLD, 30));
-//            l1.setBounds(268, 30, 701, 80);
-//            contentPane.add(l1);
+            JLabel l1 = new JLabel("Student Login");
+            l1.setForeground(new Color(204, 51, 102));
+            l1.setFont(new Font("Segoe UI Semilight", Font.BOLD, 30));
+            l1.setBounds(268, 30, 701, 80);
+            contentPane.add(l1);
 
-//            JLabel l2 = new JLabel("");
-//            l2.setVerticalAlignment(SwingConstants.TOP);
-//            ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/second.png"));
-//            Image i2 = i1.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
-//            ImageIcon i3 = new ImageIcon(i2);
-//            l2 = new JLabel(i3);
-//            l2.setBounds(60, 140, 159, 152);
-//            contentPane.add(l2);
 
-//            JLabel l3 = new JLabel("");
-//            ImageIcon i4  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/third.png"));
-//            Image i5 = i4.getImage().getScaledInstance(200, 200,Image.SCALE_DEFAULT);
-//            ImageIcon i6 = new ImageIcon(i5);
-//            l3 = new JLabel(i6);
-//            l3.setBounds(300, 160, 134, 128);
-//            contentPane.add(l3);
 
             JLabel l4 = new JLabel("");
             ImageIcon i7  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/fourth.png"));
@@ -134,12 +114,7 @@ public class studentHome extends JFrame implements ActionListener{
            b3.setBounds(562, 320, 167, 44);
 //            contentPane.add(b3);
 
-           // JPanel panel = new JPanel();
-           // panel.setBorder(new TitledBorder(new LineBorder(new Color(250, 128, 114), 2), "Operation", TitledBorder.LEADING,
-	//			TitledBorder.TOP, null, new Color(220, 20, 60)));
-           // panel.setBounds(20, 120, 750, 260);
-           // panel.setBackground(Color.WHITE);
-           // contentPane.add(panel);
+           
 
             b4 = new JButton("Issue Book");
             b4.addActionListener(this);

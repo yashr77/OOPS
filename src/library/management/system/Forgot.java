@@ -142,10 +142,24 @@ public class Forgot extends JFrame implements ActionListener{
 
 		st.setString(1, t4.getText());
 		ResultSet rs = st.executeQuery();
-
+                
+                int z=0;
+                
+                String s="";
+                
 		while (rs.next()) {
-                    	t5.setText(rs.getString("password"));
+                    	s=(rs.getString("password"));
+                        if(rs.getInt("admin")==1)
+                            z=1;
 		}
+                if(z==1)
+                {
+                    JOptionPane.showMessageDialog(null, "You can't access Admin credentials! Reported for security breach");
+                }
+                else
+                {
+                    t5.setText(s);                
+                }
 
             }
             if(ae.getSource() == b3){
@@ -154,7 +168,7 @@ public class Forgot extends JFrame implements ActionListener{
 			
             }
         }catch(Exception e){
-            
+           
         }
     }
 

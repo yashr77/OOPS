@@ -27,7 +27,7 @@ public class Statistics extends JFrame{
             table.setModel(DbUtils.resultSetToTableModel(rs));
 
 	} catch (Exception e) {
-			// TODO: handle exception
+			
 	}
     }
 
@@ -39,7 +39,7 @@ public class Statistics extends JFrame{
             ResultSet rs = st.executeQuery();
             table_1.setModel(DbUtils.resultSetToTableModel(rs));
 	} catch (Exception e) {
-			// TODO: handle exception
+			
 	}
     }
 

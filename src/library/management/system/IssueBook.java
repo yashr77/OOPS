@@ -248,7 +248,7 @@ public class IssueBook extends JFrame implements ActionListener{
 	contentPane.add(t14);
 
 	JPanel panel_1 = new JPanel();
-	panel_1.setBorder(new TitledBorder(new LineBorder(new Color(70, 130, 180), 2, true), "Student-Deatails",
+	panel_1.setBorder(new TitledBorder(new LineBorder(new Color(70, 130, 180), 2, true), "Student-Details",
 			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(100, 149, 237)));
 	panel_1.setForeground(new Color(0, 100, 0));
 	panel_1.setBounds(360, 38, 378, 372);
@@ -264,7 +264,7 @@ public class IssueBook extends JFrame implements ActionListener{
 	dateChooser = new JDateChooser();
 	dateChooser.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
 	dateChooser.setForeground(new Color(105, 105, 105));
-	dateChooser.setBounds(137, 337, 200, 29);
+	dateChooser.setBounds(137, 337, 200,29);
 	contentPane.add(dateChooser);
 
 	b3 = new JButton("Issue");
@@ -337,7 +337,11 @@ public class IssueBook extends JFrame implements ActionListener{
 		st.setString(6, t12.getText());
 		st.setString(7, ((JTextField) dateChooser.getDateEditor().getUiComponent()).getText());
 		int i = st.executeUpdate();
-		if (i > 0)
+                if(t1.getText().isEmpty() || t8.getText().isEmpty()|| ((JTextField) dateChooser.getDateEditor().getUiComponent()).getText().isEmpty()){
+                    JOptionPane.showMessageDialog(null, "error");
+                        
+                }
+                else if (i > 0)
                     JOptionPane.showMessageDialog(null, "Successfully Book Issued..!");
 		else
                     JOptionPane.showMessageDialog(null, "error");
@@ -346,8 +350,16 @@ public class IssueBook extends JFrame implements ActionListener{
                                 }
             }
             if(ae.getSource() == b4){
-                this.setVisible(false);
-		new Home().setVisible(true);
+               if(Login_user.c==1)
+               {
+                    setVisible(false);
+                    new Home().setVisible(true);
+               }
+               else
+               {
+                    setVisible(false);
+                    new studentHome().setVisible(true);
+                }
 			
             }
             

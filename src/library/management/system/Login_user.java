@@ -11,7 +11,7 @@ public class Login_user extends JFrame implements ActionListener{
 	private JTextField textField;
 	private JPasswordField passwordField;
         private JButton button1,button2,button3;
-        private JCheckBox checkBox1;
+        private JCheckBox checkBox1,checkBox2;
 
 
 	public Login_user() {
@@ -76,47 +76,48 @@ public class Login_user extends JFrame implements ActionListener{
         checkBox1 = new JCheckBox("Admin",false);    
         checkBox1.setBounds(190,133, 75,75); 
         checkBox1.setOpaque(false);
-//        cb1 = new JCheckBox("Admin");
-//	cb1.addActionListener(this);
+
         panel.add(checkBox1);
         
+                checkBox2 = new JCheckBox("Librarian",false);    
+        checkBox2.setBounds(270,133, 100,75); 
+        checkBox2.setOpaque(false);
 
-//	JLabel l5 = new JLabel("Trouble in Login?");
-//	l5.setFont(new Font("Tahoma", Font.PLAIN, 15));
-//	l5.setForeground(new Color(255, 0, 0));
-//	l5.setBounds(70, 240, 130, 20);
-//	panel.add(l5);
+        panel.add(checkBox2);
+        
+
+
 
 		JPanel panel2 = new JPanel();
 		panel2.setBackground(new Color(176, 224, 230));
 		panel2.setBounds(24, 40, 434, 263);
 		panel.add(panel2);
 	}
-        
+        public static int c;
         public void actionPerformed(ActionEvent s){
-            int c;
-                    if(checkBox1.isSelected())
+            
+                    if(checkBox1.isSelected() || checkBox2.isSelected())
                         c=1;
                     else
                         c=0;
-                    //System.out.println(":O");
+                    
             if(s.getSource() == button1 && c==1){
                 Boolean stat = false;
 		try {
                     conn con = new conn();
                     String sql = "select * from account where username=? and password=? and admin=?";
-                    //String ss="select * from account where admin=?";
+                    
                     
                     PreparedStatement st = con.c.prepareStatement(sql);
-                    //PreparedStatement sst = con.c.prepareStatement(ss);
+                   
                     st.setString(1, textField.getText());
                     st.setString(2, passwordField.getText());
                     st.setInt(3, c ); 
-                    //sst.setInt(1, c );
+                   
                     
 
                     ResultSet r= st.executeQuery();
-                    //ResultSet rr= sst.executeQuery();
+                    
                     if (r.next()) {
                         this.setVisible(false);
                         new Loading().setVisible(true);
@@ -128,23 +129,23 @@ public class Login_user extends JFrame implements ActionListener{
 		}
             }
                 else            
-                if(s.getSource() == button1 && !(checkBox1.isSelected()))
+                if(s.getSource() == button1 && !((checkBox1.isSelected())||(checkBox2.isSelected())))
                 {
                     Boolean stat = false;
 		try {
                     conn con = new conn();
                     String sql = "select * from account where username=? and password=? and admin=?";
-                    //String ss="select * from account where admin=?";
+                    
                     
                     PreparedStatement st = con.c.prepareStatement(sql);
-                    //PreparedStatement sst = con.c.prepareStatement(ss);
+                   
                     st.setString(1, textField.getText());
                     st.setString(2, passwordField.getText());                    
                     st.setInt(3, c );   
                     
 
                     ResultSet r= st.executeQuery();
-                    //ResultSet rr= sst.executeQuery();
+                    
                     if (r.next() ) {
                         this.setVisible(false);
                         new studentHome().setVisible(true);
