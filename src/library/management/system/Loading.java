@@ -35,7 +35,7 @@ public class Loading extends JFrame implements Runnable {
                         setVisible(false);
                         new Home().setVisible(true);
                     }
-                    Thread.sleep(50);
+                    Thread.sleep(20);
                     
                 }
             } catch (Exception e) {
@@ -48,13 +48,13 @@ public class Loading extends JFrame implements Runnable {
             super("Loading");
             th = new Thread((Runnable) this);
 
-            setBounds(600, 300, 600, 400);
+            setBounds(370, 200, 600, 400);
             contentPane = new JPanel();
             setContentPane(contentPane);
             contentPane.setLayout(null);
 
-            JLabel lbllibraryManagement = new JLabel("Smart Library v5.1");
-            lbllibraryManagement.setForeground(new Color(72, 209, 204));
+            JLabel lbllibraryManagement = new JLabel("BITS LIBRARY SYSTEM");
+            lbllibraryManagement.setForeground(new Color(34, 40, 66));
             lbllibraryManagement.setFont(new Font("Trebuchet MS", Font.BOLD, 35));
             lbllibraryManagement.setBounds(130, 46, 500, 35);
             contentPane.add(lbllibraryManagement);

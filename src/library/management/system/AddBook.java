@@ -24,7 +24,7 @@ public class AddBook extends JFrame implements ActionListener{
     }
 
     public AddBook() {
-        setBounds(600, 200, 518, 442);
+        setBounds(430, 200, 419, 442);
 	contentPane = new JPanel();
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
@@ -124,8 +124,8 @@ public class AddBook extends JFrame implements ActionListener{
 	b1.setBorder(new CompoundBorder(new LineBorder(new Color(128, 128, 128)), null));
         b1.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
 	b1.setBounds(102, 300, 100, 33);
-        b1.setBackground(Color.BLACK);
-        b1.setForeground(Color.WHITE);
+        b1.setBackground(Color.WHITE);
+        b1.setForeground(Color.BLACK);
 	contentPane.add(b1);
 
 	b2 = new JButton("Back");
@@ -133,14 +133,14 @@ public class AddBook extends JFrame implements ActionListener{
 	b2.setBorder(new CompoundBorder(new LineBorder(new Color(105, 105, 105)), null));
 	b2.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
 	b2.setBounds(212, 300, 108, 33);
-        b2.setBackground(Color.BLACK);
-        b2.setForeground(Color.WHITE);
+        b2.setBackground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
 	
 	contentPane.add(b2);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(138, 43, 226), 2), "Add Books", TitledBorder.LEADING,
-			TitledBorder.TOP, null, new Color(0, 0, 255)));
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(170,220,255), 4), "Add Books", TitledBorder.LEADING,
+			TitledBorder.TOP, null, new Color(34, 40, 66)));
 	panel.setBounds(10, 29, 398, 344);
 	contentPane.add(panel);
         

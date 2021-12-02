@@ -17,19 +17,19 @@ public class Login_user extends JFrame implements ActionListener{
 	public Login_user() {
             
 	setBackground(new Color(169, 169, 169));	
-        setBounds(610, 312, 615, 380);
+        setBounds(430, 250, 482, 380);
 		
         panel = new JPanel();
-	panel.setBackground(Color.cyan);
+	panel.setBackground(Color.white);
 	setContentPane(panel);
 	panel.setLayout(null);
 
 	JLabel l1 = new JLabel("Username : ");
-	l1.setBounds(127, 89, 89, 26);
+	l1.setBounds(110, 89, 89, 26);
 	panel.add(l1);
 
 	JLabel l2 = new JLabel("Password : ");
-	l2.setBounds(127, 126, 89, 26);
+	l2.setBounds(110, 126, 89, 26);
 	panel.add(l2);
         
         
@@ -55,7 +55,7 @@ public class Login_user extends JFrame implements ActionListener{
                 
 	button1.setForeground(new Color(56, 136, 85));
 	button1.setBackground(new Color(241, 240, 213));
-	button1.setBounds(149, 181, 113, 39);
+	button1.setBounds(110, 181, 113, 39);
 	panel.add(button1);
 		
         button2 = new JButton("SignUp");
@@ -63,7 +63,7 @@ public class Login_user extends JFrame implements ActionListener{
 	
 	button2.setForeground(new Color(139, 69, 19));
 	button2.setBackground(new Color(255, 235, 205));
-	button2.setBounds(289, 181, 113, 39);
+	button2.setBounds(250, 181, 113, 39);
 	panel.add(button2);
 
 	button3 = new JButton("Forgot Password");
@@ -71,10 +71,10 @@ public class Login_user extends JFrame implements ActionListener{
 	
         button3.setForeground(new Color(205, 92, 92));
 	button3.setBackground(new Color(253, 245, 230));
-	button3.setBounds(199, 231, 179, 39);
+	button3.setBounds(150, 231, 179, 39);
 	panel.add(button3);
         checkBox1 = new JCheckBox("Admin",false);    
-        checkBox1.setBounds(190,133, 75,75); 
+        checkBox1.setBounds(192,128, 75,75); 
         checkBox1.setOpaque(false);
 //        cb1 = new JCheckBox("Admin");
 //	cb1.addActionListener(this);

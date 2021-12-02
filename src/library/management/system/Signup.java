@@ -27,7 +27,7 @@ public class Signup extends JFrame implements ActionListener{
     }
 
     public Signup() {
-        setBounds(600, 250, 606, 406);
+        setBounds(390, 250, 540, 406);
 	contentPane = new JPanel();
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
@@ -61,7 +61,7 @@ public class Signup extends JFrame implements ActionListener{
 	comboBox = new JComboBox();
 	comboBox.setModel(new DefaultComboBoxModel(new String[] { "Your NickName?", "Your Lucky Number?",
 			"Your child SuperHero?", "Your childhood Name ?" }));
-	comboBox.setBounds(265, 202, 148, 20);
+	comboBox.setBounds(275, 202, 148, 20);
 	contentPane.add(comboBox);
 
 	JLabel lblSecurityQuestion = new JLabel("Security Question :");
@@ -71,45 +71,45 @@ public class Signup extends JFrame implements ActionListener{
 	contentPane.add(lblSecurityQuestion);
 
         textField = new JTextField();
-	textField.setBounds(265, 91, 148, 20);
+	textField.setBounds(275, 91, 148, 20);
 	contentPane.add(textField);
 	textField.setColumns(10);
 
 	textField_1 = new JTextField();
 	textField_1.setColumns(10);
-	textField_1.setBounds(265, 128, 148, 20);
+	textField_1.setBounds(275, 128, 148, 20);
 	contentPane.add(textField_1);
 
         textField_2 = new JTextField();
 	textField_2.setColumns(10);
-	textField_2.setBounds(265, 165, 148, 20);
+	textField_2.setBounds(275, 165, 148, 20);
 	contentPane.add(textField_2);
 
 	textField_3 = new JTextField();
 	textField_3.setColumns(10);
-	textField_3.setBounds(265, 239, 148, 20);
+	textField_3.setBounds(275, 239, 148, 20);
 	contentPane.add(textField_3);
 
 	b1 = new JButton("Create");
 	b1.addActionListener(this);
 	b1.setFont(new Font("Tahoma", Font.BOLD, 13));
-	b1.setBounds(140, 289, 100, 30);
-        b1.setBackground(Color.BLACK);
-        b1.setForeground(Color.WHITE);
+	b1.setBounds(138, 289, 100, 30);
+        b1.setBackground(Color.WHITE);
+        b1.setForeground(Color.BLACK);
 	contentPane.add(b1);
 
 	b2 = new JButton("Back");
 	b2.addActionListener(this);
 	b2.setFont(new Font("Tahoma", Font.BOLD, 13));
-	b2.setBounds(300, 289, 100, 30);
-	b2.setBackground(Color.BLACK);
-        b2.setForeground(Color.WHITE);
+	b2.setBounds(280, 289, 100, 30);
+	b2.setBackground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
 	contentPane.add(b2);
 
 	JPanel panel = new JPanel();
 	panel.setForeground(new Color(34, 139, 34));
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(128, 128, 0), 2), "Create-Account",
-			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(34, 139, 34)));
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(170,220,255), 2), "Create-Account",
+			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(34, 40, 66)));
 	panel.setBounds(31, 46, 476, 296);
         panel.setBackground(Color.WHITE);
 	contentPane.add(panel);

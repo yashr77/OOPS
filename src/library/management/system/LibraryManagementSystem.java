@@ -11,9 +11,9 @@ public class LibraryManagementSystem extends JFrame implements ActionListener{
         
         public LibraryManagementSystem() {
 		
-                setSize(1366,390);
+                setSize(1200,649);
                 setLayout(null);
-                setLocation(300,300);
+                setLocation(45,75);
 
 		l1 = new JLabel("");
                 b1 = new JButton("Next");
@@ -24,12 +24,12 @@ public class LibraryManagementSystem extends JFrame implements ActionListener{
                 
                 
                 ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/first.jpg"));
-                Image i3 = i1.getImage().getScaledInstance(1366, 390,Image.SCALE_DEFAULT);
+                Image i3 = i1.getImage().getScaledInstance(1200, 649,Image.SCALE_DEFAULT);
                 ImageIcon i2 = new ImageIcon(i3);
                 l1 = new JLabel(i2);
                 
-                b1.setBounds(1050,250,200,60);
-		l1.setBounds(0, 0, 1366, 390);
+                b1.setBounds(510,450,200,60);
+		l1.setBounds(0, 0, 1200, 649);
                 
                 l1.add(b1);
 		add(l1);

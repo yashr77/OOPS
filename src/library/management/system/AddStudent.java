@@ -25,38 +25,38 @@ public class AddStudent extends JFrame implements ActionListener{
 
     public AddStudent() {
         super("Add Member");
-	setBounds(710, 210, 548, 450);
+	setBounds(450, 180, 380, 450);
 	contentPane = new JPanel();
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
 
-	JLabel l1 = new JLabel("Student_id");
-	l1.setForeground(new Color(25, 25, 112));
+	JLabel l1 = new JLabel("Student ID:");
+	l1.setForeground(Color.BLACK);
 	l1.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l1.setBounds(64, 63, 102, 22);
 	contentPane.add(l1);
 
-	JLabel l2 = new JLabel("Name");
-	l2.setForeground(new Color(25, 25, 112));
+	JLabel l2 = new JLabel("Name:");
+	l2.setForeground(Color.BLACK);
 	l2.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l2.setBounds(64, 97, 102, 22);
 	contentPane.add(l2);
 
-	JLabel l3 = new JLabel("Father's Name");
-	l3.setForeground(new Color(25, 25, 112));
+	JLabel l3 = new JLabel("Father's Name:");
+	l3.setForeground(Color.BLACK);
 	l3.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l3.setBounds(64, 130, 102, 22);
 	contentPane.add(l3);
 
-	JLabel l4 = new JLabel("Branch");
-	l4.setForeground(new Color(25, 25, 112));
+	JLabel l4 = new JLabel("Branch:");
+	l4.setForeground(Color.BLACK);
 	l4.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l4.setBounds(64, 209, 102, 22);
 	contentPane.add(l4);
 
-        JLabel l5 = new JLabel("Year");
-	l5.setForeground(new Color(25, 25, 112));
+        JLabel l5 = new JLabel("Year:");
+	l5.setForeground(Color.BLACK);
 	l5.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l5.setBounds(64, 242, 102, 22);
 	contentPane.add(l5);
@@ -115,20 +115,20 @@ public class AddStudent extends JFrame implements ActionListener{
 	b1.addActionListener(this);
 	b1.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	b1.setBounds(64, 321, 111, 33);
-        b1.setBackground(Color.BLACK);
-        b1.setForeground(Color.WHITE);
+        b1.setBackground(Color.WHITE);
+        b1.setForeground(Color.BLACK);
 	contentPane.add(b1);
 
 	b2 = new JButton("Back");
 	b2.addActionListener(this);
 	b2.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	b2.setBounds(198, 321, 111, 33);
-        b2.setBackground(Color.BLACK);
-        b2.setForeground(Color.WHITE);
+        b2.setBackground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
 	contentPane.add(b2);
 
-	JLabel l7 = new JLabel("Course");
-	l7.setForeground(new Color(25, 25, 112));
+	JLabel l7 = new JLabel("Course:");
+	l7.setForeground(Color.BLACK);
 	l7.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l7.setBounds(64, 173, 102, 22);
 	contentPane.add(l7);
@@ -142,8 +142,8 @@ public class AddStudent extends JFrame implements ActionListener{
 	contentPane.add(comboBox_3);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(102, 205, 170), 2, true), "Add-Student",
-			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(30, 144, 255)));
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(170,220,255), 4, true), "Add-Student",
+			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(34, 40, 66)));
 	panel.setBackground(new Color(211, 211, 211));
 	panel.setBounds(10, 38, 358, 348);
         

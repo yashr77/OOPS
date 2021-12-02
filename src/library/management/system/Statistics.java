@@ -44,7 +44,7 @@ public class Statistics extends JFrame{
     }
 
     public Statistics() {
-        setBounds(400, 200, 810, 594);
+        setBounds(250, 125, 790, 594);
 	contentPane = new JPanel();
         contentPane.setBackground(Color.WHITE);
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
